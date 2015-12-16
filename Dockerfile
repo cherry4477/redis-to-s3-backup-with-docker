@@ -1,4 +1,4 @@
-FROM ubuntu:14.10
+FROM ubuntu:14.02
 
 MAINTAINER Antoine Finkelstein <antoine@finkelstein.fr>
 
