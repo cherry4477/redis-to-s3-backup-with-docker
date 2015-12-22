@@ -1,13 +1,13 @@
-FROM ubuntu:14.10
+FROM ubuntu:14.04
 
 MAINTAINER Antoine Finkelstein <antoine@finkelstein.fr>
 
-#RUN apt-get update
+RUN apt-get update
 RUN apt-get install -y wget
 
 RUN wget -O- -q http://s3tools.org/repo/deb-all/stable/s3tools.key | sudo apt-key add -
 RUN wget -O/etc/apt/sources.list.d/s3tools.list http://s3tools.org/repo/deb-all/stable/s3tools.list
-#RUN apt-get update
+RUN apt-get update
 RUN apt-get install -y s3cmd
 
 # Define default command.
